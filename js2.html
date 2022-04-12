@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>script태그안에 자바 스크립트 명령 작성하기</title>
+    <script>
+        function over(obj){
+            obj.src = 'https://kormedi.com/wp-content/uploads/2021/11/r658x025-580x407.jpg'
+        }
+        function out(obj){
+            obj.src = 'http://kormedi.com/wp-content/uploads/2021/09/gettyimages-1189095854-580x443.jpg'
+        }
+        function clickff(){
+            alert('클릭했습니다');
+        }
+    </script>
+</head>
+<body>
+    <h3> 마우스를 올려보세요 </h3>
+    <hr>
+    <img src="http://kormedi.com/wp-content/uploads/2021/09/gettyimages-1189095854-580x443.jpg" alt="사과" 
+    onmouseover="over(this)" 
+    onmouseout="out(this)" 
+    onclick="clickff()">
+    <p id="rr"></p>
+   <!-- 마우스가 올라가면 이런저런 함수를 호출해라 하는 언어
+       http://kormedi.com/wp-content/uploads/2021/09/gettyimages-1189095854-580x443.jpg
+    https://kormedi.com/wp-content/uploads/2021/11/r658x025-580x407.jpg>-->
+
+</body>
+</html>
